@@ -161,9 +161,13 @@ ul {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .main-section {
         width: 80%;
+    }
+
+    .main-box p {
+        padding-left: 0;
     }
 
     .main-box {
@@ -172,10 +176,6 @@ ul {
 
     .main-box strong {
         font-size: 1.12em;
-    }
-
-    .main-box p {
-        padding-left: 0;
     }
 
     .talents > .main-box p {
@@ -190,10 +190,13 @@ ul {
     #row-spacer {
         display: inline-block;
     }
+}
 
+@media (max-width: 700px) {
     nav ul {
-        font-size: 7vw;
+        font-size: 5vw;
         padding: 0; margin: 0;
         gap: 5%;
     }
 }
+
