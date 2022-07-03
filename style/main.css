@@ -143,6 +143,7 @@ main {
 } .biography p {
     margin-bottom: 10px;
     text-align: justify;
+    padding-right: 20px;
 }
 
 .talents > .main-box p {
