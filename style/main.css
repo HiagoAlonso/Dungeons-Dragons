@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Grenze+Gotisch:wght@200;400&display=swap');
+
 :root {
     --white-border: hsl(0, 0%, 75%);
     --white-box: hsl(0, 0%, 91%);
     --white-bg: hsl(0, 0%, 95%);
     --papiro: #ffdaa7;
+
+    --font-1: 'Fredericka the Great', cursive;
+    --font-2: 'Grenze Gotisch', cursive;
 }
 
 * {
@@ -16,42 +21,138 @@ html, body {
 }
 
 body {
-    background-image: url("../images/pexels-adam-lukac-773953.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/bg-papiro.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    border-bottom: 1px solid var(--white-border);
-    box-shadow: 0px 0px 7px var(--white-box);
-    background-image: linear-gradient(to top, var(--white-bg), white);
-}
+    width: 60%;
+    margin: auto;
+
+    background-color: brown;
+    min-height: 500px;
+    min-width: 300px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);  
+    box-shadow: 0 0 7px black;
+    border: 1px solid black;
+} 
 
 header img {
-    height: 150px;
+    height: 250px;
+    border-radius: 300px;
+    border: 1px solid black;
+    box-shadow: inset 0 0 17px rgba(0, 0, 0, 0.3);
+    background-color: white;
 }
 
-#menubar {
+header h1, header h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--font-1);
+    color: White;
+    font-weight: 200;
+    text-shadow: 0 0 3px white;
+    letter-spacing: 0.15em;
+} header h2 {
+    text-shadow: 0 0 2px white;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+
+nav > ul {
     display: flex;
-    list-style: none;
-    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 90px;
+    width: 100%;
+    margin: 5% auto;
+    padding-bottom: 10px;
+
+    font-family: var(--font-2);
+    font-size: 2em;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+
+    background-image: url("../images/perg-unic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+} nav li:hover {
+    color: brown;
+    text-shadow: 0 0 2px brown;
+    cursor: pointer;
 }
 
-.card {
-    border: 1px solid var(--white-border);
-    box-shadow: 0 0 7px var(--white-box);
-    background-color: var(--papiro);
-    width: 25%; height: 301px;
-    margin: 2% auto;
-    border-radius: 0px 0 0 10px;
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-.container {
-    margin: 10px;
+.main-section {
+    width: 60%;
+    margin: auto;
+    background-color: #F5E096;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.main-box {
+    font-family: var(--font-2);
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.main-box strong {
+    font-size: 1.12em;
+    text-shadow: none;
+}
+
+.main-box p {
+    padding-left: 20px;
+}
+
+#informacoes {
+    flex-direction: column;
+}
+
+#atributos {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+} #atributos strong{
     padding: 10px;
+}
+
+.pergaminho {
+    width: 76%;
+    margin: auto;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    text-indent: 5%;
+}
+
+#row-spacer strong{
+    padding-left: 2%;
+}
+
+@media (max-width: 600px) {
+    .main-section {
+        width: 80%;
+    } 
+    .pergaminho {
+        width: 100%;
+        margin: auto;
+    }
 }
