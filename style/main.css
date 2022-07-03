@@ -36,7 +36,7 @@ header {
 
     background-color: brown;
     min-height: 500px;
-    min-width: 280px;
+    min-width: 260px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);  
     box-shadow: 0 0 7px black;
     border: 1px solid black;
