@@ -148,16 +148,6 @@ ul {
     text-indent: 5%;
 }
 
-@media (max-width: 500px){
-
-    nav ul {
-        font-size: 1.2em;
-        gap: 5%;
-    }
-    #row-spacer {
-        display: inline-block;
-    }
-}
 
 @media (max-width: 500px) {
     .main-section {
@@ -169,8 +159,13 @@ ul {
         margin: auto;
     }
 
+    #row-spacer {
+        display: inline-block;
+    }
+
     nav ul {
         font-size: 7vw;
         padding: 0; margin: 0;
+        gap: 5%;
     }
 }
