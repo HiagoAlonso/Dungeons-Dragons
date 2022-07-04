@@ -25,6 +25,10 @@ body {
     background-image: url("../images/bg-papiro.jpg");
     background-size: cover;
     background-repeat: repeat;
+} @media (min-width: 1200px) {
+    body {
+        background-attachment: fixed;
+    }
 }
 
 header {
@@ -197,7 +201,6 @@ abbr {
     list-style: none;
     text-indent: 5%;
 }
-
 
 @media (max-width: 800px) {
     .main-section {
