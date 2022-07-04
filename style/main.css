@@ -22,12 +22,16 @@ html, body {
 }
 
 body {
-    background-image: url("../images/bg-papiro.jpg");
+    background-image: url("../images/bg-papiro-otimizado.jpg");
     background-size: cover;
     background-repeat: repeat;
 } @media (min-width: 1200px) {
     body {
         background-attachment: fixed;
+    }
+} @media (min-width: 800px) {
+    body {
+        background-image: url("../images/bg-papiro.jpg");
     }
 }
 
