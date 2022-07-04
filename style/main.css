@@ -22,6 +22,8 @@ html, body {
 
 body {
     background-image: url("../images/bg-papiro.jpg");
+    background-size: cover;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
