@@ -78,10 +78,13 @@ nav > img{
     max-width: 400px;
 }
 
-nav > ul, nav > span{
+nav > ul {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+nav > ul, nav > span {
     width: 47%;
     max-width: 300px;
     padding: 10px;
@@ -99,6 +102,7 @@ nav > span {
     border-bottom: 1px solid #695b2d3d;
     color: #30280e;
     padding: 5px;
+    text-align: center;
 }
 
 nav li {
