@@ -27,8 +27,8 @@
             <li class="scroll-talents">Talentos</li>
             <li class="scroll-inventory">Inventário</li>
             <li class="scroll-biography">Biografia</li>
-            <li href="#" style="color: brown;"> Magias</li>
-            <li href="#" style="color: brown;">Crônicas</li>
+            <li class="scroll-spells"> Magias</li>
+            <li"><a href="cronicas.html" class="link-internal">Crônicas</a></li>
         </ul>
         <img src="images/perg-bottom.png" alt="">
     </nav>
@@ -184,7 +184,7 @@
         <img src="images/perg-top.png" class="pergaminho">
         <section class="main-section">
             <section class="main-box biography">
-                <h2><strong>Auto Biografia</strong></h2><br>
+                <h2>Auto Biografia</h2><br>
 
                 <p>Guerreiros da natureza, nós patrulheiros, especializamos-nos na caça de bestas que ameaçam as margens da civilização. No árduo treinamento, aprendemos a rastrear nossos inimigos favoritos como exímios predadores; e com um movimentar silêncioso na floresta, escondemos-nos atrás de arbustos e pedregulhos. Apesar de um patrulheiro sobreviver como um caçador, um guia ou um rastreador, a verdadeira vocação desta estirpe é defender as zonas periféricas da civilização das investidas de monstros e hordas de humanoides que vem das regiões selvagens.</p>
                 <p>Todavia, não tenho interesse em, especificamente, proteger a fronteira. Não resguardo ódio, rancor ou pena das minhas presas prediletas, nem vivo pela esperança. Eu sobrevivo pois sou exímio caçador, e as bestas sobrevivem pois pessoas chegam perto demais da floresta. Eu, os humanos, as bestas, e todos os seres e Deuses, somos só mais uma engrenagem rodando na grande máquina cármica, no funcionamento do universo. E a falsa desilução do Eu os fazem petulantes na crença de que diferem-se em algo, que se não na perspectiva do mundo que experienciam.</p>
@@ -199,6 +199,35 @@
            
                 <p>Não existe lugar para precaução em uma vida vivida ao máximo. Viver é arriscar tudo, se não, você é só uma pilha de carne perambulando pelo mundo. Tudo é desprovido de qualidade inerente, eu contemplei através de séculos, nascimentos e morte de ideais e sonhos, mas ainda sim, dou a graça e permito-me agraciar ao ouvir, e assim dar valor, a história de todos que me cercam.</p>
             </section>
+        </section>
+        <img src="images/perg-bottom.png" class="pergaminho">
+        <img src="images/perg-top.png" class="pergaminho">
+        <section class="main-section spells">
+
+            <section class="main-box">
+                <h2>Habilidade de Conjuração</h2><br>
+
+                <p>Sabedoria é a sua habilidade para conjurar suas magias
+                de patrulheiro, já que sua magia vem da sua sintonia com
+                a natureza.</p>
+                <p>Além disso, quando você adquire um nível nessa
+                classe, você pode escolher uma magia de patrulheiro que
+                você conheça e substituí-la por outra magia da lista de
+                magias de patrulheiro, que também deve ser de um nível
+                ao qual você tenha espaços de magia. </p> <br>
+
+                <p><strong>CD para suas magias</strong> = 8 + Bônus de Proficiência + Modificador de Sabedoria</p>
+                <p><strong>Modificador de Ataque de Magia</strong> = Bônus de Proficiência +
+                seu Modificador de Sabedoria </p>
+            </section>
+            <section class="main-box">
+                <h2>Lista de Magias</h2>
+                <ul>
+                    <li>Não disponível. ( Requer Level 2 ).</li>
+                    <br>
+                </ul>
+            </section>
+
         </section>
         <img src="images/perg-bottom.png" class="pergaminho">
     </main>
@@ -236,6 +265,13 @@
 
             $(".scroll-biography").click(function(){
                 let servicePlace = $(".biography").offset().top
+                $("html, body").animate({
+                    scrollTop: servicePlace
+                })
+            })
+
+            $(".scroll-spells").click(function(){
+                let servicePlace = $(".spells").offset().top
                 $("html, body").animate({
                     scrollTop: servicePlace
                 })
