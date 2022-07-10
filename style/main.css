@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Grenze+Gotisch:wght@200;400&display=swap');
 
+@font-face {
+    font-family: Old London;
+    src: url("old_london/Olondon_.otf"),
+    url("old_london/OldLondon.ttf");
+}
+
 :root {
     --white-border: hsl(0, 0%, 75%);
     --white-box: hsl(0, 0%, 91%);
@@ -10,6 +16,7 @@
 
     --font-1: 'Fredericka the Great', cursive;
     --font-2: 'Grenze Gotisch', cursive;
+    --font-3: "Old London", cursive;
 }
 
 * {
@@ -39,13 +46,16 @@ header {
     width: 60%;
     max-width: 400px;
     margin: auto;
+    padding-top: 30px;
 
-    background-color: brown;
+    background-color: #4E060D;
+    background-image: linear-gradient(to bottom, #4E060D, #AA1417, #a30b13);
     min-height: 500px;
     min-width: 260px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);  
     box-shadow: 0 0 7px black;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 } 
 
 header img {

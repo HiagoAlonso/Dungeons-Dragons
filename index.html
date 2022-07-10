@@ -28,7 +28,7 @@
             <li class="scroll-inventory">Inventário</li>
             <li class="scroll-biography">Biografia</li>
             <li class="scroll-spells"> Magias</li>
-            <li"><a href="cronicas.html" class="link-internal">Crônicas</a></li>
+            <li"><a href="lorotas.html" class="link-internal">Crônicas</a></li>
         </ul>
         <img src="images/perg-bottom.png" alt="">
     </nav>
@@ -231,52 +231,8 @@
         </section>
         <img src="images/perg-bottom.png" class="pergaminho">
     </main>
-
-
-
+    
     <script src="script/jquery-3.6.0.min.js"></script>
-    <script>
-        $("document").ready(function() {
-
-            $(".flip").click(function () {
-                $('#menu').slideToggle('slow')
-            })
-
-            $(".scroll-attributes").click(function(){
-                let servicePlace = $(".attributes").offset().top
-                $("html, body").animate({
-                    scrollTop: servicePlace
-                })
-            })
-
-            $(".scroll-talents").click(function(){
-                let servicePlace = $(".talents").offset().top
-                $("html, body").animate({
-                    scrollTop: servicePlace
-                })
-            })
-
-            $(".scroll-inventory").click(function(){
-                let servicePlace = $(".inventory").offset().top
-                $("html, body").animate({
-                    scrollTop: servicePlace
-                })
-            })
-
-            $(".scroll-biography").click(function(){
-                let servicePlace = $(".biography").offset().top
-                $("html, body").animate({
-                    scrollTop: servicePlace
-                })
-            })
-
-            $(".scroll-spells").click(function(){
-                let servicePlace = $(".spells").offset().top
-                $("html, body").animate({
-                    scrollTop: servicePlace
-                })
-            })
-        })
-    </script>
+    <script src="script/menu.js"></script>
 </body>
 </html>
