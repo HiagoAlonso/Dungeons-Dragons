@@ -32,12 +32,8 @@ body {
     background-image: url("../images/bg-papiro-otimizado.jpg");
     background-size: cover;
     background-repeat: repeat;
-} @media (min-width: 1000px) {
-    body {
-        background-attachment: fixed;
-        background-image: url("../images/bg-papiro.jpg");
-    }
 }
+
 
 header {
     display: flex;
@@ -219,44 +215,5 @@ abbr {
 .inventory ul, .spells ul {
     list-style: none;
     text-indent: 5%;
-}
-
-@media (max-width: 800px) {
-    .main-section {
-        width: 80%;
-    }
-
-    .main-box p {
-        padding-left: 0;
-        padding-right: 0px;
-    }
-
-    .main-box {
-        font-size: 1em;
-    }
-
-    .main-box strong {
-        font-size: 1.12em;
-    }
-
-    .talents > .main-box p {
-        margin-top: 5%;
-    }
-
-    .pergaminho {
-        width: 100%;
-        margin: auto;
-    }
-
-    #row-spacer {
-        display: inline-block;
-    }
-}
-
-@media (max-width: 700px) {
-    nav ul {
-        font-size: 5vw;
-        gap: 5%;
-    }
 }
 

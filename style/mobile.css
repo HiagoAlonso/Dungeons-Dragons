@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@media (min-width: 1000px) {
+    body {
+        background-attachment: fixed;
+        background-image: url("../images/bg-papiro.jpg");
+    }
+}
+
+@media (max-width: 800px) {
+
+    .main-title h1 {
+        font-size: 3em;
+    } .main-title h2 {
+        font-size: 1.5em;
+    }
+
+    .main-section {
+        width: 80%;
+    }
+
+    .main-box p {
+        padding-left: 0;
+        padding-right: 0px;
+    }
+
+    .main-box {
+        font-size: 1em;
+    }
+
+    .main-box strong {
+        font-size: 1.12em;
+    }
+
+    .talents > .main-box p {
+        margin-top: 5%;
+    }
+
+    .pergaminho {
+        width: 100%;
+        margin: auto;
+    }
+
+    #row-spacer {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        font-size: 5vw;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .flip {
+        font-size: 5vw;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-title {
+        text-align: center;
+        text-indent: 0%;
+    }
+}

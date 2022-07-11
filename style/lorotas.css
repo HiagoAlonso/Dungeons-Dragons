@@ -46,20 +46,3 @@ button.nav-page {
     text-indent: 2%;;
 }
 
-@media (max-width: 800px) {
-    .main-title h1 {
-        font-size: 3em;
-    } .main-title h2 {
-        font-size: 1.5em;
-    }
-} @media (max-width: 450px) {
-    .main-title {
-        text-align: center;
-        text-indent: 0%;
-    }
-} @media (max-width: 500px) {
-    .flip {
-        font-size: 5vw;
-        gap: 5%;
-    }
-}
