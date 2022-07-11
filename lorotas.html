@@ -37,7 +37,7 @@
                     <p>— Dê meia volta. — A voz do homem ecoou baixo, quase emudecida pelos gritantes pensamentos enraivecidos. — Seria um crime... Se eu tivesse que quebrar a promessa que fiz por você.</p>
                     <p>— Não culpe os outros por suas más decisões, Presa Branca. — Retrucou ela.</p>
                     <p>De corte chanel e olhar penetrante, arroxeados, próximo ao preto; Cherya fitava os olhos ambar de Kvocth com sua cabeça levemente declinada, e silhueta estratégicamente de lado à ele, como uma esgrimista. Vestida com roupas que, quando não completamente negras, próximas ao escuro; justas, mas flexíveis e permissivas ao combate como a verdadeira ladina que era. E o homem, por sua vez, trajado com um couro batido, que confundia ao julgar se realmente estava em fragalhos, ou se apresentava as saliências e ranhuras, que mais pareciam com galhos e folhagens, de modo proposital. Por outro lado, suas longas madeixas prateadas que cascateavam até a cintura, seus olhos serenos e aguçados, e suas orelhas pontiagudas acentuavam sua beleza inata élfica.</p>
-                    <p>— Hán, inimigo da moda como sempre. Por que será que Patrulheiros são sempre tão vulgares, ein? Mas se bem que eu gosto desse charme selvagem, sempre tive uma queda por elfos. — A mulher caminhou em direção à ele, e mesmo flertando com um sorriso, seu olhar não escondeu ou desviou-se de sua intenção assassina nem por um instante.</p>
+                    <p>— Hán, inimigo da moda como sempre. Por que será que Patrulheiros são sempre tão vulgares, ein? Mas se bem que eu gosto desse charme selvagem. — A mulher caminhou em direção à ele, e mesmo flertando com um sorriso, seu olhar não escondeu ou desviou-se de sua intenção assassina nem por um instante.</p>
                     <p>O homem não vacilou, ao ver a aproximação da mulher, desembainhou sua espada curta e pôs-se em posição de combate. — Eu te criei como uma filha Cherya, não consegue ver? Não se aproxime... ou irá se arrepender.</p>
                     <p>— Sério? porque eu nunca te vi como meu pai! — Movida não pela raiva, mas pelo impeto, a mulher adentrou o espaço pessoal de Kvocth com facilidade, obrigando-o à recuar um ou dois passos, para não receber seus ataques gatunos e imprevisíveis. E ao finalizar sua breve investida, arqueou uma de suas sombrancelhas em ironia.</p>
                     <p>O homem não retrucou com falas, sabia que o silêncio era uma poesia naquele momento. Ao invés, decidiu não desviar seu olhar dos olhos da mulher, e encarou-a por um ou dois momentos antes de soltar um leve suspiro. Numa lentidão e silêncio acentuados, Kvocth removeu seu couro batido camuflado, e o deixou ceder no chão ao seu lado, revelando por baixo uma gola alta, sem manga e de cor preta. Justa no passo de ressaltar seus músculos sem banalizar sua aparência, bem como, evidênciando as tatuagens tribais que cobria completamente seu braço. O homem abaixou sua cabeça e suas pupilas subiram, mantendo o olhar fixo na contraparte; e ao tragar um punhado de ar ao seu peito, sua respiração tornou-se audível e intensa, como a de uma fera. Seu fitar submetia Cherya à insignificância, e ela engoliu seco ao notar a súbita mudança de atitude de Kvocth. — Vá em frente, tente, se acha que vai vencer... Acho que já percebeu que eu não terei pena de você.</p>
@@ -55,7 +55,9 @@
                     <p>Dentre tais havia uma atípica mulher, que não só chamava atenção por suas roupas quase que inteiramente brancas, se não por seus bordados carmesins, e suas madeixas gradientes do preto ao vermelho escuro, em um corte Undercut; como também, por sua postura dominante, porém feminina, e o fato de rejeitar todos falsos corajosos que tentavam a sorte - Inclusive os mais charmosos, fortes ou abastados.</p>
                     <p>Sua mão destra envolveu a taça de bambu e a levou até seus lábios avermelhados, assim fechou brevemente seus olhos para apreciar o doce e refrescante sabor da bebida. Para somente abri-los no fim de seu suspirar de gratificação, e a tempo de notar a chegada de um outrém ao seu lado.</p>
                     <p>"Será outro?"— pensou para si, antes de virar seu olhar sutilmente para observá-lo. Era um rapaz de fisionomia atlética, um tipico e formoso rosto élfico, porém de semblante rústico, pois era trajado com a simplicidade de um andarilho. A íris cintilando belamente em tons de âmbar, e a cachoeira de prata que recaia até seus ombros, chamaram a atenção da jovem mulher, que manteve seus olhos no rosto do rapaz.</p>
-                    <p>O elfo, notando que atrasaria para ser atendido pela ocupabilidade do bartender, escorou seu cotovelo no balcão e varreu o local com seus olhos, notando assim o fitar da moça. Seus olhos encontraram-se e observaram-se por alguns momentos em silêncio, até que o rapaz desviou-se lentamente para baixo, ao olhar de baixo á cima a mulher.</p>
+                    <p>O elfo, notando que atrasaria para ser atendido pela ocupabilidade do bartender, escorou seu cotovelo no balcão e varreu o local com seus olhos, notando assim o fitar da moça. Seus olhos encontraram-se e observaram-se por alguns momentos, até que o jovem elfo comentou com um tom de entusiasmo brando:</p>
+                    <br>
+                    <p><strong>To be Continued</strong></p>
                 </div>
             </section>
 
@@ -86,10 +88,12 @@
             }
 
             $("#next-page").click(function() {
-                $(`.${defaultPage}`).hide()
-                defaultPage += 1
-                $(`.${defaultPage}`).show()
-                attpage()
+                if (defaultPage < 1) {
+                    $(`.${defaultPage}`).hide()
+                    defaultPage += 1
+                    $(`.${defaultPage}`).show()
+                    attpage()
+                }
             })
 
             $("#previous-page").click(function() {
