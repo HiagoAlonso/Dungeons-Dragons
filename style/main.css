@@ -4,14 +4,16 @@
 
 @font-face {
     font-family: Old London;
-    src: url("old_london/Olondon_.otf"),
-    url("old_london/OldLondon.ttf");
+    src: url("/assets/old_london/Olondon_.otf"),
+    url("/assets/old_london/OldLondon.ttf");
 }
 
 :root {
     --white-border: hsl(0, 0%, 75%);
     --white-box: hsl(0, 0%, 91%);
     --white-bg: hsl(0, 0%, 95%);
+    --dark-bg: hsl(354, 94%, 13%);
+    --dark-border: hsl(354, 94%, 8%);
     --papiro: #ffdaa7;
 
     --font-1: 'Fredericka the Great', cursive;
@@ -29,51 +31,34 @@ html, body {
 }
 
 body {
-    background-image: url("../images/bg-papiro-otimizado.jpg");
+    background-attachment: fixed;
+    background-image: url("../assets/images/bg-papiro.jpg");
     background-size: cover;
     background-repeat: repeat;
 }
 
-
 header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 60%;
-    max-width: 400px;
-    margin: auto;
-    padding-top: 30px;
+    justify-content: space-between;
 
-    background-color: #4E060D;
-    background-image: linear-gradient(to bottom, #4E060D, #AA1417, #a30b13);
-    min-height: 500px;
-    min-width: 260px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);  
-    box-shadow: 0 0 7px black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-} 
-
-header img {
-    height: 250px;
-    border-radius: 300px;
-    border: 1px solid black;
-    box-shadow: inset 0 0 17px rgba(0, 0, 0, 0.3);
-    background-color: white;
+    width: 100%;
+    background-color: var(--dark-bg);
+    border-bottom: 1px solid var(--dark-border);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+} header img {
+    height: 140px;
+    padding: 20px;
 }
 
-header h1, header h2 {
-    font-size: 3em;
-    text-align: center;
+.menubar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: goldenrod;
     font-family: var(--font-1);
-    color: White;
-    font-weight: 200;
-    text-shadow: 0 0 3px white;
-    letter-spacing: 0.15em;
-} header h2 {
-    text-shadow: 0 0 2px white;
-    padding-bottom: 15px;
-    font-size: 1.5em;
+    padding-right: 50px;
+    font-size: 1.3em;
 }
 
 nav {
@@ -162,38 +147,14 @@ main {
     padding-right: 20px;
 }
 
-#informacoes {
-    flex-direction: column;
-}
-
-#atributos {
-    max-width: 500px;
-    display: flex;
-    flex-wrap: wrap;
-} #atributos strong{
-    padding: 10px;
-}
-
 .pergaminho {
     width: 76%;
     margin: auto;
 }
 
-#row-spacer {
+.row-spacer {
     display:flex;
     gap: 15px;
-}
-
-.biography p, .spells p, .biography h2{
-    text-indent: 5%;
-} .biography p {
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-.talents > .main-box p {
-    margin-top: 3%;
-    text-align: justify;
 }
 
 .flip {
@@ -205,15 +166,8 @@ abbr {
 }
 
 .link-internal {
-    color: brown;
+    color: goldenrod;
     text-decoration: none;
 } .link-internal:hover {
-    color: rgb(161, 0, 0);
-    text-shadow: 0 0 2px rgb(161, 0, 0);
+    color: gold;
 }
-
-.inventory ul, .spells ul {
-    list-style: none;
-    text-indent: 5%;
-}
-

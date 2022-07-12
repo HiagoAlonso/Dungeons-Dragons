@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     body {
-        background-attachment: fixed;
-        background-image: url("../images/bg-papiro.jpg");
+        background-attachment: initial;
+        background-image: url("../assets/images/bg-papiro-otimizado.jpg");
     }
+
+    header {
+        flex-direction: column;
+    } header .menubar ul{
+        padding: 0px 0px 30px 0px;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -57,6 +64,13 @@
     .flip {
         font-size: 5vw;
         gap: 5%;
+    }
+
+    header img {
+        height: 30vw;
+    } header .menubar ul{
+        font-size: 4vw;
+        gap: 15px;
     }
 }
 

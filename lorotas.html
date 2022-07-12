@@ -10,8 +10,21 @@
     <title>Lorotas do Lobo</title>
 </head>
 <body>
+    <header>
+        <img src="assets/images/d&d/toppng.com-dungeons-and-dragons-4th-edition-logo-dungeons-dragons-tomb-of-annihilation-board-801x226.png" alt="">
+
+        <div class="menubar">
+            <ul>
+                <li><a class="link-internal" href="index.html">Início</a></li>
+                <li><a class="link-internal" href="#">Livros</a></li>
+                <li><a class="link-internal" href="personagens.html">Personagens</a></li>
+                <li><a class="link-internal" href="#">Classes</a></li>
+                <li><a class="link-internal" href="lorotas.html">Crônicas</a></li>
+            </ul>
+        </div>
+    </header>
     <nav>
-        <img src="images/perg-top.png" alt="">
+        <img src="assets/images/perg-top.png" alt="">
         <span class="flip">Crônicas</span>
         <ul id="menu" style="display:none;">
             <li class="scroll-wanderer saga disable">Wanderer Tales</li>
@@ -21,11 +34,11 @@
             <li>Many-Arrows <br><sup>100-240</sup></li>
             <li>Tyrian's Village <br><sup>0-100</sup></li>
         </ul>
-        <img src="images/perg-bottom.png" alt="">
+        <img src="assets/images/perg-bottom.png" alt="">
     </nav>
 
     <main>
-        <img src="images/perg-top.png" class="pergaminho">
+        <img src="assets/images/perg-top.png" class="pergaminho">
         <section class="main-section">
             <section class="0">
                 <div class="main-title">
@@ -100,59 +113,16 @@
             </section>
 
             <div class="pages">
-                <button id="previous-page"class="nav-page"><img src="images/left.png"> Anterior</button>
+                <button id="previous-page"class="nav-page"><img src="assets/images/left.png"> Anterior</button>
                 <span id="actual-page"></span>
-                <button id="next-page" class="nav-page">Próxima <img src="images/right.png"></button>
+                <button id="next-page" class="nav-page">Próxima <img src="assets/images/right.png"></button>
             </div>
 
         </section>
-        <img src="images/perg-bottom.png" class="pergaminho">
+        <img src="assets/images/perg-bottom.png" class="pergaminho">
     </main>
 
     <script src="script/jquery-3.6.0.min.js"></script>
     <script src="script/menu.js"></script>
-    <script>
-        $("document").ready(function() {
-
-            let defaultPage = 0
-            attpage()
-            
-            function attpage() {
-                $("#actual-page").html(defaultPage)
-                    let servicePlace = $(`.${defaultPage}`).offset().top
-                    $("html, body").animate({
-                    scrollTop: servicePlace
-                })
-            }
-
-            $("#next-page").click(function() {
-                if (defaultPage < 2) {
-                    $(`.${defaultPage}`).hide()
-                    defaultPage += 1
-                    $(`.${defaultPage}`).show()
-                    attpage()
-                }
-            })
-
-            $("#previous-page").click(function() {
-                if (defaultPage > 0) {
-                    $(`.${defaultPage}`).hide()
-                    defaultPage -= 1
-                    $(`.${defaultPage}`).show()
-                    attpage()
-                }
-            })
-        })
-    </script>
 </body>
-</html>      
-
-
-
-
-
-
-<!-- 
-    <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Kiranshastry - Flaticon</a>
-    <a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Becris - Flaticon</a>
--->
+</html>

@@ -1,5 +1,7 @@
 $("document").ready(function() {
 
+    //     M e n u
+
     $(".flip").click(function () {
         $('#menu').slideToggle('slow')
     })
@@ -37,5 +39,36 @@ $("document").ready(function() {
         $("html, body").animate({
             scrollTop: servicePlace
         })
+    })
+
+    //     P a g i n a t i o n
+
+    let defaultPage = 0
+    $("#actual-page").html(defaultPage)
+    
+    function attpage() {
+        $("#actual-page").html(defaultPage)
+        let servicePlace = $(`.${defaultPage}`).offset().top
+        $("html, body").animate({
+        scrollTop: servicePlace
+        })
+    }
+
+    $("#next-page").click(function() {
+        if (defaultPage < 2) {
+            $(`.${defaultPage}`).hide()
+            defaultPage += 1
+            $(`.${defaultPage}`).show()
+            attpage()
+        }
+    })
+
+    $("#previous-page").click(function() {
+        if (defaultPage > 0) {
+            $(`.${defaultPage}`).hide()
+            defaultPage -= 1
+            $(`.${defaultPage}`).show()
+            attpage()
+        }
     })
 })

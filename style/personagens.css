@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.flamula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 30px;
+
+    background-image: linear-gradient(to bottom, var(--dark-bg), #AA1417);
+    min-height: 500px;
+    min-width: 260px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);  
+    border-left: 1px solid var(--dark-border);
+    border-right: 1px solid var(--dark-border);
+} 
+
+.flamula img {
+    height: 250px;
+    border-radius: 300px;
+    border: 1px solid black;
+    box-shadow: inset 0 0 17px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.flamula h1, .flamula h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--font-1);
+    color: White;
+    font-weight: 200;
+    text-shadow: 0 0 3px white;
+    letter-spacing: 0.15em;
+} .flamula h2 {
+    text-shadow: 0 0 2px white;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#informacoes {
+    flex-direction: column;
+}
+
+#atributos {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+} #atributos strong{
+    padding: 10px;
+}
+
+.biography p, .spells p, .biography h2{
+    text-indent: 5%;
+} .biography p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.talents > .main-box p {
+    margin-top: 3%;
+    text-align: justify;
+}
+
+.inventory ul, .spells ul {
+    list-style: none;
+    text-indent: 5%;
+}
