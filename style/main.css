@@ -12,8 +12,9 @@
     --white-border: hsl(0, 0%, 75%);
     --white-box: hsl(0, 0%, 91%);
     --white-bg: hsl(0, 0%, 95%);
-    --dark-bg: hsl(354, 94%, 13%);
-    --dark-border: hsl(354, 94%, 8%);
+    --dark-bg: hsl(354, 94%, 10%);
+    --dark-border-reflex: hsl(354, 92%, 13%);
+    --dark-border: hsl(354, 94%, 7%);
     --papiro: #ffdaa7;
 
     --font-1: 'Fredericka the Great', cursive;
@@ -40,25 +41,44 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
 
     width: 100%;
     background-color: var(--dark-bg);
     border-bottom: 1px solid var(--dark-border);
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-} header img {
-    height: 140px;
-    padding: 20px;
+} header #logo-dragon {
+    height: 65px;
+    padding: 10px 10px;
 }
 
 .menubar ul{
     list-style: none;
     display: flex;
-    gap: 30px;
     color: goldenrod;
-    font-family: var(--font-1);
-    padding-right: 50px;
-    font-size: 1.3em;
+    font-family: var(--font-2);
+    font-size: 1.2em;
+} .menubar li {
+    padding: 10px;
+}
+
+.menubar ul::before {
+    content: "";
+    background-image: linear-gradient(to right, var(--dark-border), var(--dark-border-reflex));
+    width: 3px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+}
+
+.menubar li::after {
+    content: "";
+    background-image: linear-gradient(to right, var(--dark-border), var(--dark-border-reflex));
+    width: 3px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    transform: translateX(9px);
 }
 
 nav {
