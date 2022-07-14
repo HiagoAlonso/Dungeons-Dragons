@@ -100,7 +100,7 @@ header {
 
 .main-banner-livro {
     height: 100vh;
-    width: 55vw;
+    width: 50vw;
 }
 
 .main-banner-logo {
@@ -235,12 +235,13 @@ footer {
     color: goldenrod;
 }
 
-#footer-copyright {
+.footer-copyright {
     display: flex;
     justify-content: space-between;
     background-color: var(--dark-border);
     border-top: 2px solid var(--dark-border-reflex);
     padding: 20px;
+    font-family: var(--font-1);
 }
 
 footer a {

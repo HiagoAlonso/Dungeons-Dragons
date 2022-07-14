@@ -7,22 +7,22 @@
         background-image: url("../assets/images/bg-papiro-otimizado.jpg");
     }
 
-    footer {
-        display: none;
-    }
-
     .main-banner-livro {
         display: none;
     }
 
-    .main-banner {
+    .main-banner::before {
+        content: "";
+        position: absolute;
+        top: 65px;
         height: 30vh;
+        width: 100%;
+
         background-image: url("../assets/images/d&d/toppng.com-basic-rules-for-dungeons-and-dragons-fifth-edition-jpe-1000x1000.png");
-        background-position: top left;
         background-size: cover;
-        display: block;
-        box-shadow: 0 0 0;
+
         border-bottom: 1px solid var(--dark-border);
+
     }
 
     .main-banner > div {
@@ -31,16 +31,21 @@
         padding-top: 5vh;
         background-color: rgba(218, 170, 0, 0.233);
         height: 64vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-banner-logo {
-        width: 100%;
+        width: 70%;
     }
 
     .main-banner-text {
-        font-size: 6vw;
+        font-size: 4vw;
         text-align: center;
     }
+
 }
 
 @media (max-width: 800px) {
@@ -80,14 +85,9 @@
     #row-spacer {
         display: inline-block;
     }
-}
 
-@media (max-width: 700px) {
-    nav ul {
-        font-size: 5vw;
-        gap: 5%;
-    }
-
+    /* M E N U   M O B I L E */
+    
     .menuicon {
         height: 18px;
         display: inline-block;
@@ -156,7 +156,29 @@
     }
 }
 
+@media (max-width: 700px) {
+    nav ul {
+        font-size: 5vw;
+        gap: 5%;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+        align-items: center;
+    } footer p {
+        font-size: 3vw;
+    }
+
+}
+
 @media (max-width: 500px) {
+
+    .main-banner-logo {
+        width: 100%;
+    }
+    .main-banner-text {
+        font-size: 6vw;
+    }
     .flip {
         font-size: 5vw;
         gap: 5%;
