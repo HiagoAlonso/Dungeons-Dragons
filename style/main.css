@@ -185,6 +185,10 @@ abbr {
     text-decoration: none;
 }
 
+.hide {
+    display: none;
+}
+
 .link-internal {
     color: goldenrod;
     text-decoration: none;

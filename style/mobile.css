@@ -65,4 +65,27 @@
         text-align: center;
         text-indent: 0%;
     }
+    
+    .menuicon {
+        height: 18px;
+        display: inline-block;
+        transform: translateX(-32vw);
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .menubar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 65vw;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }

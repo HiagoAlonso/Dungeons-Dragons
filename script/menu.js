@@ -1,10 +1,20 @@
 $("document").ready(function() {
 
-    //     M e n u
+    //     M e n u  S l i d e r
+
+
 
     $(".flip").click(function () {
         $('#menu').slideToggle('slow')
     })
+
+    $(".menuicon").click(function () {
+        $('.menubar').slideToggle('slow')
+    })
+
+
+
+    //     M e n u  S c r o l l
 
     $(".scroll-attributes").click(function(){
         let servicePlace = $(".attributes").offset().top
