@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: Old London;
-    src: url("/assets/old_london/Olondon_.otf"),
-    url("/assets/old_london/OldLondon.ttf");
+    src: url("assets/old_london/Olondon_.otf"),
+    url("assets/old_london/OldLondon.ttf");
 }
 
 :root {
