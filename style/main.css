@@ -16,6 +16,7 @@
     --dark-border-reflex: hsl(354, 92%, 13%);
     --dark-border: hsl(354, 94%, 7%);
     --papiro: #ffdaa7;
+    --papiro-transparent: #ffdaa779;
 
     --font-1: 'Fredericka the Great', cursive;
     --font-2: 'Grenze Gotisch', cursive;
@@ -44,9 +45,9 @@ header {
     justify-content: left;
 
     width: 100%;
-    background-color: var(--dark-bg);
+    background-image: linear-gradient(to bottom, var(--dark-bg), var(--dark-border));
     border-bottom: 1px solid var(--dark-border);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 } header #logo-dragon {
     height: 65px;
     padding: 10px 10px;
@@ -79,6 +80,38 @@ header {
     position: absolute;
     top: 0;
     transform: translateX(9px);
+}
+
+.main-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    background-color: rgba(218, 170, 0, 0.233);
+    box-shadow: 0 0 5px var(--dark-border);
+    border-bottom: 1px solid var(--dark-border);
+    color: var(--dark-border-reflex)
+}
+
+.main-banner div {
+    padding: 10px;
+}
+
+.main-banner-livro {
+    height: 100vh;
+    width: 55vw;
+}
+
+.main-banner-logo {
+    width: 45vw;
+}
+
+.main-banner-text {
+    font-size: 2.7vw;
+    font-family: var(--font-2);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.308);
+    padding: 30px;
 }
 
 .menu-page {
