@@ -2,7 +2,7 @@
 
 @media (max-width: 1000px) {
     body {
-        background-attachment: initial;
+        background-attachment: scroll;
         background-image: url("../assets/images/bg-papiro-otimizado.jpg");
     }
 }
