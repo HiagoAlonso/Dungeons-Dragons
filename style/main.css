@@ -233,6 +233,7 @@ footer {
     width: 100%;
     box-shadow: 0 0 7px var(--dark-border);
     color: goldenrod;
+    margin-top: 30px;
 }
 
 .footer-copyright {
