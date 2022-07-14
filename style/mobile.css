@@ -79,7 +79,7 @@
     }
 
     .menubar {
-        position: absolute;
+        position: fixed;
         top: 50vw;
         left: -65vw;
         z-index: 10;
@@ -118,7 +118,7 @@
     }
 
     .menu-offset {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -65vw;
 
