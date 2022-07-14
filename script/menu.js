@@ -10,10 +10,12 @@ $("document").ready(function() {
 
     $(".menuicon").click(function () {
         $(".menu-offset").animate({left: '0'});
+        $(".menubar").animate({left: '0'});
     })
 
     $(".close").click(function () {
         $(".menu-offset").animate({left: '-65vw'});
+        $(".menubar").animate({left: '-65vw'});
     })
 
 
