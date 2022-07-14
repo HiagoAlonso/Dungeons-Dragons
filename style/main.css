@@ -81,26 +81,26 @@ header {
     transform: translateX(9px);
 }
 
-nav {
+.menu-page {
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 5% auto;
 }
 
-nav > img{
+.menu-page > img{
     margin: auto;
     width: 60%;
     max-width: 400px;
 }
 
-nav > ul {
+.menu-page > ul {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-nav > ul, nav > span {
+.menu-page > ul, .menu-page > span {
     width: 47%;
     max-width: 300px;
     padding: 10px;
@@ -113,7 +113,7 @@ nav > ul, nav > span {
     background-color: #F5E096;
 }
 
-nav > span {
+.menu-page > span {
     letter-spacing: 0.5em;
     border-bottom: 1px solid #695b2d3d;
     color: #30280e;
@@ -121,7 +121,7 @@ nav > span {
     text-align: center;
 }
 
-nav li {
+.menu-page li {
     list-style: none;
     border-bottom: 1px solid #695b2d3d;
     width: 105%;
@@ -130,7 +130,7 @@ nav li {
     text-align: center;
 }
 
-nav li:hover {
+.menu-page li:hover {
     color: rgb(161, 0, 0);
     text-shadow: 0 0 2px rgb(161, 0, 0);
     cursor: pointer;

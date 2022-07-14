@@ -1,15 +1,19 @@
 $("document").ready(function() {
 
+
+
     //     M e n u  S l i d e r
-
-
 
     $(".flip").click(function () {
         $('#menu').slideToggle('slow')
     })
 
     $(".menuicon").click(function () {
-        $('.menubar').slideToggle('slow')
+        $(".menu-offset").animate({left: '0'});
+    })
+
+    $(".close").click(function () {
+        $(".menu-offset").animate({left: '-65vw'});
     })
 
 
@@ -51,6 +55,8 @@ $("document").ready(function() {
         })
     })
 
+
+    
     //     P a g i n a t i o n
 
     let defaultPage = 0
