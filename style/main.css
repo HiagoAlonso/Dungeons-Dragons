@@ -228,3 +228,25 @@ abbr {
 } .link-internal:hover {
     color: gold;
 }
+
+footer {
+    width: 100%;
+    box-shadow: 0 0 7px var(--dark-border);
+    color: goldenrod;
+}
+
+#footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-border);
+    border-top: 2px solid var(--dark-border-reflex);
+    padding: 20px;
+}
+
+footer a {
+    color: brown;
+    text-decoration: none;
+    text-shadow: 0 0 1px black;
+} footer a:hover {
+    color: var(--papiro);
+}
