@@ -2,6 +2,26 @@
 
 
 @media (max-width: 1000px) {
+
+    .main-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: auto;
+    }
+
+    .main-cards img{
+        width: 100vw;
+        margin-top: 20px;
+    }
+
+    .main-cards p{
+        font-size: 1em;
+    } .main-cards a {
+        font-size: 1.2em;
+    }
+
     body {
         background-attachment: fixed;
         background-image: url("../assets/images/bg-papiro-otimizado.jpg");
@@ -22,7 +42,6 @@
         background-size: cover;
 
         border-bottom: 1px solid var(--dark-border);
-
     }
 
     .main-banner > div {
@@ -186,5 +205,14 @@
     .main-title {
         text-align: center;
         text-indent: 0%;
+    }
+
+    .card-content h2 {
+        font-size: 8vw;
+        transform: translateY(-13.7vw);
+    }
+
+    .card-content a {
+        padding: 5px 50px 1px 50px;
     }
 }

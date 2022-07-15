@@ -114,6 +114,66 @@ header {
     padding: 30px;
 }
 
+.main-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-bg);
+    box-shadow: 0 0 7px var(--dark-border);
+    padding: 2%;
+    gap: 1%;
+    width: 100%;
+}
+
+.main-cards img {
+    border: 1px solid brown;
+    border-bottom: 0px;
+    width: 48vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    text-align: center;
+    color: var(--papiro);
+    text-shadow: 0 0 1px black;
+    font-family: var(--font-2);
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid brown;
+    border-top: 0px;
+}
+
+.card-content h2 {
+    color: goldenrod;
+    letter-spacing: 0.5em;
+    font-size: 2.5em;
+    font-family: var(--font-3);
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-67px);
+    padding: 10px;
+    border-bottom: 1px solid brown;
+    border-top: 1px solid brown;
+}
+
+.card-content p {
+    transform: translateY(-37px);
+    padding: 0 20px;
+    font-size: 1.5vw;
+}
+
+.card-content a {
+    padding: 5px 100px 1px 100px;
+    background-color: var(--dark-bg);
+    border: 1px solid brown;
+    border-bottom: 0px;
+    font-size: 1.5vw;
+    letter-spacing: 0.2em;
+}
+
 .menu-page {
     position: relative;
     display: flex;
