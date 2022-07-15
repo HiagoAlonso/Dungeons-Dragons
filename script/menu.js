@@ -8,6 +8,10 @@ $("document").ready(function() {
         $('#menu').slideToggle('slow')
     })
 
+    $(".dropdown").click(function () {
+        $('.menu-drop').slideToggle('slow')
+    })
+
     $(".menuicon").click(function () {
         $(".menu-offset").animate({left: '0'});
         $(".menubar").animate({left: '0'});

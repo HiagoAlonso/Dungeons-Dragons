@@ -33,8 +33,7 @@ html, body {
 }
 
 body {
-    background-attachment: fixed;
-    background-image: url("../assets/images/bg-papiro.jpg");
+    background-image: url("../assets/images/bg-papiro-otimizado.jpg");
     background-size: cover;
     background-repeat: repeat;
 }
@@ -61,6 +60,9 @@ header {
     font-size: 1.2em;
 } .menubar li {
     padding: 10px;
+} .menubar a:hover {
+    cursor: pointer;
+    color: gold;
 }
 
 .menubar ul::before {
@@ -72,7 +74,7 @@ header {
     top: 0;
 }
 
-.menubar li::after {
+.menubar > ul > li::after {
     content: "";
     background-image: linear-gradient(to right, var(--dark-border), var(--dark-border-reflex));
     width: 3px;
@@ -258,6 +260,25 @@ main {
 .main-box p, .main-box h2 {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.menu-drop {
+    display: none;
+    border-top: 1px solid var(--dark-border-reflex);
+    box-shadow: 0 0 7px var(--dark-border);
+    background-image: linear-gradient(to top, var(--dark-bg), var(--dark-border));
+    padding: 20px;
+}
+
+#livro-drop {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.dropdown::after {
+    content: url("../assets/images/down.png");
+    margin-left: 7px;
 }
 
 .pergaminho {
