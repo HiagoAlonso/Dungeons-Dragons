@@ -1,17 +1,24 @@
 @charset "UTF-8";
 
+body {
+    background-image: url("../assets/images/josephine-bredehoft-KsAo8ouBn8A-unsplash-embaçada.jpg");
+}
+
 .flamula {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+
     max-width: 400px;
-    margin: auto;
+    width: 60%;
+    min-width: 260px;
+    min-height: 500px;
+
     padding-top: 30px;
+    margin: auto;
 
     background-image: linear-gradient(to bottom, var(--dark-bg), #AA1417);
-    min-height: 500px;
-    min-width: 260px;
+
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);  
     border-left: 1px solid var(--dark-border);
     border-right: 1px solid var(--dark-border);
@@ -66,4 +73,8 @@
 .inventory ul, .spells ul {
     list-style: none;
     text-indent: 5%;
+}
+
+p {
+    font-size: 0.8em;
 }

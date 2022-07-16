@@ -42,6 +42,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
+    top: 0;
+    z-index: 1;
 
     width: 100%;
     background-image: linear-gradient(to bottom, var(--dark-bg), var(--dark-border));
