@@ -87,6 +87,12 @@
 
 @media (max-width: 800px) {
 
+    .main-section-head {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
     .main-title h1 {
         font-size: 3em;
     } .main-title h2 {
