@@ -243,6 +243,30 @@ main {
     flex-direction: column;
 }
 
+.main-section-head {
+    padding: 15px 3%;
+    margin-top: 10vh;
+
+    border-top: 1px solid var(--dark-border-reflex);
+    border-bottom: 1px solid var(--dark-border-reflex);
+
+    background-image: linear-gradient(to bottom, var(--dark-bg), var(--dark-border));
+    color: goldenrod;
+
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.2em;
+    font-size: 1.7em;
+    font-family: var(--font-3);
+
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+}
+
+.main-section-body {
+    background-color: rgba(20, 0, 0, 0.8);
+    color: goldenrod;
+    padding-bottom: 20px;
+}
+
 .main-section {
     width: 60%;
     margin: auto;
