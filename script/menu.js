@@ -23,13 +23,6 @@ $("document").ready(function() {
     $(".livro-dropdown").click(function () {
         $('.menu-drop').slideToggle('slow')
     })
-    $(".filter-class").click(function () {
-        $('.menu-drop').slideToggle('slow')
-    })
-    $(".filter-attribute").click(function () {
-        $('.menu-drop').slideToggle('slow')
-    })
-
 
     //     M e n u  S c r o l l
 
