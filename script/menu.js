@@ -23,6 +23,9 @@ $("document").ready(function() {
     $(".livro-dropdown").click(function () {
         $('.menu-drop').slideToggle('slow')
     })
+    $(".menubar").mouseleave(function () {
+        $('.menu-drop').slideUp('slow')
+    })
 
     //     M e n u  S c r o l l
 
