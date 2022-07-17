@@ -8,10 +8,6 @@ $("document").ready(function() {
         $('#menu').slideToggle('slow')
     })
 
-    $(".dropdown").click(function () {
-        $('.menu-drop').slideToggle('slow')
-    })
-
     $(".menuicon").click(function () {
         $(".menu-offset").animate({left: '0'});
         $(".menubar").animate({left: '0'});
@@ -22,6 +18,17 @@ $("document").ready(function() {
         $(".menubar").animate({left: '-65vw'});
     })
 
+    //     D r o p d o w n
+
+    $(".livro-dropdown").click(function () {
+        $('.menu-drop').slideToggle('slow')
+    })
+    $(".filter-class").click(function () {
+        $('.menu-drop').slideToggle('slow')
+    })
+    $(".filter-attribute").click(function () {
+        $('.menu-drop').slideToggle('slow')
+    })
 
 
     //     M e n u  S c r o l l

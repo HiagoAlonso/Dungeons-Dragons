@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    max-width: 400px;
+    max-width: 380px;
     width: 60%;
     min-width: 260px;
     min-height: 500px;
@@ -23,14 +23,10 @@ body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);  
     border-left: 1px solid var(--dark-border);
     border-right: 1px solid var(--dark-border);
-} .mini {
-    background-image: linear-gradient(to bottom, var(--dark-border-reflex), var(--dark-bg));
-    min-height: 0; min-width: 0;
-    width: 180px; height: 280px;
-}
+} 
 
 
-.flamula img {
+.flamula-image > img {
     height: 250px;
     border-radius: 300px;
     border: 1px solid black;
