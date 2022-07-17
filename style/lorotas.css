@@ -38,13 +38,13 @@ button.nav-page {
 }
 
 .main-title {
-    padding: 20px;
+    padding: 10px;
 }
 .main-title h1{
-    font-size: 4em;
+    font-size: 3em;
     font-family: var(--font-3);
 } .main-title h2 {
-    font-size: 2em;
+    font-size: 1em;
     font-family: var(--font-2);
     text-indent: 2%;;
 }

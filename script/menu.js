@@ -80,7 +80,7 @@ $("document").ready(function() {
     }
 
     $("#next-page").click(function() {
-        if (defaultPage < 2) {
+        if (defaultPage < 3) {
             $(`.${defaultPage}`).hide()
             defaultPage += 1
             $(`.${defaultPage}`).show()
