@@ -90,24 +90,17 @@ body {
     font-family: var(--font-2);
 }
 
-@media (min-width: 500px) {
-    .character-card {
-        margin: 0;
-        margin-left: 5%;
-    }
-}
-
 .character-card {
     background-image: linear-gradient(to bottom, var(--dark-border-reflex), var(--dark-bg));
     min-height: 0; min-width: 0;
     width: 180px; height: 340px;
-    padding: 0;
-}
+    padding: 0; margin-left: 5%;
+} 
 
 .character-image img {
     padding-top: 1px;
-    width: 175px;
-    height: 225px;
+    width: 180px;
+    height: 240px;
 } 
 
 .character-row {
