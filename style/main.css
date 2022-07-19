@@ -42,6 +42,10 @@ body {
     background-repeat: repeat;
 }
 
+
+/* --------- <-!-> Configurações Gerais de Cabeçalho <-!-> ---------*/
+
+
 header {
     display: flex;
     align-items: center;
@@ -53,7 +57,7 @@ header {
     background-image: linear-gradient(to bottom, var(--dark-bg), var(--dark-border));
     border-bottom: 1px solid var(--dark-border);
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-} header #logo-dragon {
+} header #header-nav-logo {
     height: 65px;
     padding: 5px 10px 5px 10px;
     margin-bottom: -5px;
@@ -91,169 +95,30 @@ header {
     transform: translateX(9px);
 }
 
-.main-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-
-    background-color: rgba(218, 170, 0, 0.233);
-    box-shadow: 0 0 5px var(--dark-border);
-    border-bottom: 1px solid var(--dark-border);
-    color: var(--dark-border-reflex)
+.dropdown::after {
+    content: url("../assets/images/down.png");
+    margin-left: 7px;
 }
 
-.main-banner div {
-    padding: 10px;
-}
-
-.main-banner-livro {
-    height: 100vh;
-    width: 50vw;
-}
-
-.main-banner-logo {
-    width: 45vw;
-}
-
-.main-banner-text {
-    font-size: 2.7vw;
-    font-family: var(--font-2);
-    text-shadow: 0 0 7px rgba(0, 0, 0, 0.308);
-    padding: 30px;
-}
-
-.main-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--dark-bg);
+.dropdown-books-menu {
+    display: none;
+    border-top: 1px solid var(--dark-border-reflex);
     box-shadow: 0 0 7px var(--dark-border);
-    padding: 2%;
-    gap: 1%;
-    width: 100%;
-}
-
-.main-cards img {
-    border: 1px solid brown;
-    border-bottom: 0px;
-    width: 48vw;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-}
-
-.card-content {
-    text-align: center;
-    color: var(--papiro);
-    text-shadow: 0 0 1px black;
-    font-family: var(--font-2);
-
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid brown;
-    border-top: 0px;
-}
-
-.card-content h2 {
-    color: goldenrod;
-    letter-spacing: 0.5em;
-    font-size: 2.5em;
-    font-family: var(--font-3);
-    background-color: rgba(0, 0, 0, 0.7);
-    transform: translateY(-67px);
-    padding: 10px;
-    border-bottom: 1px solid brown;
-    border-top: 1px solid brown;
-}
-
-.card-content p {
-    transform: translateY(-37px);
-    padding: 0 20px;
-    font-size: 1.5vw;
-}
-
-.card-content a {
-    padding: 5px 100px 1px 100px;
-    background-color: var(--dark-bg);
-    border: 1px solid brown;
-    border-bottom: 0px;
-    font-size: 1.5vw;
-    letter-spacing: 0.2em;
-}
-
-.menu-page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 5% auto;
-}
-
-.menu-page > img{
-    margin: auto;
-    width: 60%;
-    max-width: 400px;
-}
-
-.menu-page > ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.menu-page > ul, .menu-page > span {
-    width: 47%;
-    max-width: 300px;
-    padding: 10px;
-    margin: auto;
-
-    font-family: var(--font-1);
-    font-size: 1.3em;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-
-    background-color: #F5E096;
-}
-
-.menu-page > span {
-    letter-spacing: 0.4em;
-    border-bottom: 1px solid #695b2d3d;
-    color: #30280e;
-    padding: 5px;
-    text-align: center;
-}
-
-.menu-page li {
-    list-style: none;
-    border-bottom: 1px solid #695b2d3d;
-    width: 105%;
-    padding: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.menu-page li:hover {
-    color: rgb(161, 0, 0);
-    text-shadow: 0 0 2px rgb(161, 0, 0);
-    cursor: pointer;
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-section {
-    width: 60%;
-    margin: auto;
-    background-color: #F5E096;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.466);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top, var(--dark-bg), var(--dark-border));
     padding: 20px;
 }
 
-.main-section-head {
+.dropdown-books-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+/* --------- <-!-> Configurações Gerais de Corpo <-!-> ---------*/
+
+
+.container-head {
     padding: 15px 3%;
     margin-top: 10vh;
 
@@ -271,7 +136,7 @@ main {
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
 }
 
-.main-section-body {
+.container-body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -282,49 +147,134 @@ main {
     box-shadow: 0 0 7px var(--dark-border);
 }
 
-.main-box {
+.main-section {
+    width: 60%;
+    margin: auto;
+    background-color: #F5E096;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.section-content {
     font-family: var(--font-2);
     font-size: 1.2em;
     margin-top: 40px;
 }
 
-.main-box strong {
+.section-content strong {
     font-size: 1.12em;
     text-shadow: none;
 }
 
-.main-box p, .main-box h2 {
+.section-content p, .section-content h2 {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.menu-drop {
-    display: none;
-    border-top: 1px solid var(--dark-border-reflex);
-    box-shadow: 0 0 7px var(--dark-border);
-    background-image: linear-gradient(to top, var(--dark-bg), var(--dark-border));
-    padding: 20px;
-}
 
-#livro-drop {
+/* --------- <-!-> Página Inicial <-!-> ---------*/
+
+
+.main-banner {
     display: flex;
-    list-style: none;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    background-color: rgba(218, 170, 0, 0.233);
+    box-shadow: 0 0 5px var(--dark-border);
+    border-bottom: 1px solid var(--dark-border);
+    color: var(--dark-border-reflex)
 }
 
-.dropdown::after {
-    content: url("../assets/images/down.png");
-    margin-left: 7px;
+.main-banner div {
+    padding: 10px;
 }
+
+.banner-image {
+    height: 100vh;
+    width: 50vw;
+}
+
+.banner-logo {
+    width: 45vw;
+}
+
+.banner-text {
+    font-size: 2.7vw;
+    font-family: var(--font-2);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.308);
+    padding: 30px;
+}
+
+.main-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-bg);
+    box-shadow: 0 0 7px var(--dark-border);
+    padding: 2%;
+    gap: 1%;
+    width: 100%;
+}
+
+.main-categories img {
+    border: 1px solid brown;
+    border-bottom: 0px;
+    width: 48vw;
+}
+
+.categories-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-card-content {
+    text-align: center;
+    color: var(--papiro);
+    text-shadow: 0 0 1px black;
+    font-family: var(--font-2);
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid brown;
+    border-top: 0px;
+}
+
+.categories-card-content h2 {
+    color: goldenrod;
+    letter-spacing: 0.5em;
+    font-size: 2.5em;
+    font-family: var(--font-3);
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-67px);
+    padding: 10px;
+    border-bottom: 1px solid brown;
+    border-top: 1px solid brown;
+}
+
+.categories-card-content p {
+    transform: translateY(-37px);
+    padding: 0 20px;
+    font-size: 1.5vw;
+}
+
+.categories-card-content a {
+    padding: 5px 100px 1px 100px;
+    background-color: var(--dark-bg);
+    border: 1px solid brown;
+    border-bottom: 0px;
+    font-size: 1.5vw;
+    letter-spacing: 0.2em;
+}
+
+/* --------- <-x-> Página Inicial <-x-> ---------*/
 
 .pergaminho {
+    display: flex;
+    justify-content: center;
     width: 76%;
     margin: auto;
-}
-
-.row-spacer {
-    display:flex;
-    gap: 15px;
 }
 
 .flip {

@@ -2,24 +2,24 @@
 
 @media (min-width: 800px){
 
-    .menu-drop {
+    .dropdown-books-menu {
         position: absolute;
         top: 64px;
         margin-left: -10px;
         z-index: 1000;
         padding: 0;
-    } #livro-drop {
+    } .dropdown-books-list {
         flex-direction: column;
         font-size: 1em;
         gap: 0;
-    } #livro-drop li {
+    } .dropdown-books-list li {
         border-bottom: 0.1px solid var(--dark-border-reflex);
     }
 }
 
 @media (max-width: 1000px) {
 
-    .main-cards {
+    .main-categories {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -27,18 +27,18 @@
         margin: auto;
     }
 
-    .main-cards img{
+    .main-categories img{
         width: 100vw;
         margin-top: 20px;
     }
 
-    .main-cards p{
+    .main-categories p{
         font-size: 1em;
-    } .main-cards a {
+    } .main-categories a {
         font-size: 1.2em;
     }
 
-    .main-banner-livro {
+    .banner-image {
         display: none;
     }
 
@@ -66,32 +66,37 @@
         align-items: center;
     }
 
-    .main-banner-logo {
-        width: 70%;
+    .banner-logo {
+        width: 100%;
     }
 
-    .main-banner-text {
-        font-size: 4vw;
+    .banner-text {
+        font-size: 6vw;
         text-align: center;
     }
-
 }
 
 @media (max-width: 800px) {
 
-    .main-section-head {
+    .container-head {
         width: 100%;
         padding: 15px 0;
         text-align: center;
-    } .main-section-head h1 {
+    }
+    
+    .container-head h1 {
         font-size: 12vw;
-    } .main-section-body {
+    }
+    
+    .container-body {
         justify-content: center;
     }
 
-    .main-title h1 {
+    .section-title h1 {
         font-size: 3em;
-    } .main-title h2 {
+    }
+    
+    .section-title h2 {
         font-size: 1.5em;
     }
 
@@ -99,20 +104,20 @@
         width: 80%;
     }
 
-    .main-box p {
+    .section-content p {
         padding-left: 0;
         padding-right: 0px;
     }
 
-    .main-box {
+    .section-content {
         font-size: 1em;
     }
 
-    .main-box strong {
+    .section-content strong {
         font-size: 1.12em;
     }
 
-    .talents > .main-box p {
+    .talents > .section-content p {
         margin-top: 5%;
     }
 
@@ -125,9 +130,11 @@
         display: inline-block;
     }
 
-    /* M E N U   M O B I L E */
+
+    /* --------- <-!-> Menu Mobile <-!-> ---------*/
     
-    .menuicon {
+
+    .menu-mobile-ico {
         height: 18px;
         display: inline-block;
         transform: translateX(-32vw);
@@ -137,7 +144,7 @@
         justify-content: center;
     }
 
-    .menu-drop {
+    .dropdown-books-menu {
         width: 65vw;
         padding: 0;
         margin-left: -22px;
@@ -145,10 +152,12 @@
         box-shadow: 0 0 0;
     }
     
-    #livro-drop {
+    .dropdown-books-list {
         gap: 0;
         font-size: 0.8em;
-    } #livro-drop a {
+    }
+    
+    .dropdown-books-list a {
         color: goldenrod;
         text-shadow: 0 0 1px var(--papiro-transparent);
     }
@@ -180,19 +189,7 @@
         display: none;
     }
 
-    .close {
-        position: relative;
-        width: 20px;
-        margin: 25px;
-    }
-
-    .ded-img {
-        position: relative;
-        padding: 20px;
-        padding-top: 0;
-    }
-
-    .menu-offset {
+    .menu-mobile-offset {
         position: fixed;
         top: 0;
         left: -65vw;
@@ -209,6 +206,18 @@
         flex-direction: column;
         z-index: 10;
     }
+
+    .menu-mobile-offset-close {
+        position: relative;
+        width: 20px;
+        margin: 25px;
+    }
+
+    .menu-mobile-offset-logo {
+        position: relative;
+        padding: 20px;
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 700px) {
@@ -220,7 +229,9 @@
     .footer-copyright {
         flex-direction: column;
         align-items: center;
-    } footer p {
+    }
+    
+    footer p {
         font-size: 3vw;
     }
 }
@@ -230,26 +241,31 @@
     .main-banner-logo {
         width: 100%;
     }
+
     .main-banner-text {
         font-size: 6vw;
     }
+
     .flip {
         font-size: 5vw;
         gap: 5%;
-    } .menu-page > span {
+    }
+    
+    .menu-page > span {
         letter-spacing: 0.25em;
     }
-    .main-title {
+    
+    .section-title {
         text-align: center;
         text-indent: 0%;
     }
 
-    .card-content h2 {
+    .categories-card-content h2 {
         font-size: 8vw;
         transform: translateY(-13.7vw);
     }
 
-    .card-content a {
+    .categories-card-content a {
         padding: 5px 50px 1px 50px;
     }
 }

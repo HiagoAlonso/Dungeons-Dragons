@@ -8,23 +8,23 @@ $("document").ready(function() {
         $('#menu').slideToggle('slow')
     })
 
-    $(".menuicon").click(function () {
-        $(".menu-offset").animate({left: '0'});
+    $(".menu-mobile-ico").click(function () {
+        $(".menu-mobile-offset").animate({left: '0'});
         $(".menubar").animate({left: '0'});
     })
 
-    $(".close").click(function () {
-        $(".menu-offset").animate({left: '-65vw'});
+    $("menu-mobile-offset-close").click(function () {
+        $(".menu-mobile-offset").animate({left: '-65vw'});
         $(".menubar").animate({left: '-65vw'});
     })
 
     //     D r o p d o w n
 
-    $(".livro-dropdown").click(function () {
-        $('.menu-drop').slideToggle('slow')
+    $(".dropdown-books").click(function () {
+        $('.dropdown-books-menu').slideToggle('slow')
     })
     $("header").mouseleave(function () {
-        $('.menu-drop').slideUp('slow')
+        $('.dropdown-books-menu').slideUp('slow')
     })
 
     //     M e n u  S c r o l l

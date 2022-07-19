@@ -66,7 +66,7 @@ body {
     text-align: justify;
 }
 
-.talents > .main-box p {
+.talents > .section-content p {
     margin-top: 3%;
     text-align: justify;
 }
@@ -76,34 +76,88 @@ body {
     text-indent: 5%;
 }
 
-.content-character {
-    display: flex;
-    flex-direction: row;
-
-    padding: 20px;
-    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--dark-border);
-    border-radius: 30px;
-    background-image: linear-gradient(to right, rgba(92, 0, 0, 0.15), transparent);
-    font-family: var(--font-3);
-} .content-character p, .character-card {
-    font-family: var(--font-2);
+.row-spacer {
+    display:flex;
+    gap: 15px;
 }
+
+/* --------- <-!-> Menu de Naveção da Página de Personagem <-!-> ---------*/
+
+.menu-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.menu-page > img{
+    margin: auto;
+    width: 60%;
+    max-width: 400px;
+}
+
+.menu-page > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-page > ul, .menu-page > span {
+    width: 47%;
+    max-width: 300px;
+    padding: 10px;
+    margin: auto;
+
+    font-family: var(--font-1);
+    font-size: 1.3em;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+
+    background-color: #F5E096;
+}
+
+.menu-page > span {
+    letter-spacing: 0.4em;
+    border-bottom: 1px solid #695b2d3d;
+    color: #30280e;
+    padding: 5px;
+    text-align: center;
+}
+
+.menu-page li {
+    list-style: none;
+    border-bottom: 1px solid #695b2d3d;
+    width: 105%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.menu-page li:hover {
+    color: rgb(161, 0, 0);
+    text-shadow: 0 0 2px rgb(161, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+/* --------- <-!-> Página de Personagens <-!-> ---------*/
 
 .character-card {
     background-image: linear-gradient(to bottom, var(--dark-border-reflex), var(--dark-bg));
     min-height: 0; min-width: 0;
     width: 180px; height: 340px;
     padding: 0; margin-left: 5%;
+    font-family: var(--font-2);
 } 
 
-.character-image img {
+.character-card-image img {
     padding-top: 1px;
     width: 180px;
     height: 240px;
 } 
 
-.character-row {
+.character-card-row {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -111,11 +165,14 @@ body {
     background-color: var(--dark-border);
     border: 1px solid var(--dark-border-reflex);
     padding: 5px;
+}
 
-} .character-row img {
+.character-card-row img {
     width: 22px;
     height: 25px;
-} .character-row p {
+}
+
+.character-card-row p {
     border-right: 1px solid var(--dark-border-reflex);
     padding-right: 10px;
 }

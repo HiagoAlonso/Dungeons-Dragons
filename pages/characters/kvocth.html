@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../assets/images/d&d/logo-dragon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/characters.css">
     <link rel="stylesheet" href="../../style/mobile.css">
-    <link rel="stylesheet" href="../../style/personagens.css">
     <title>Dungeons Things | Ficha Kvocth</title>
 </head>
 <body>
     <header>
-        <img class="menuicon hide"src="../../assets/images/menu-dourado.png">
-        <a href="index.html"><img id="logo-dragon" src="../../assets/images/d&d/logo-dragon.png"></a>
+        <img class="menu-mobile-ico hide"src="../../assets/images/menu-dourado.png">
+        <a href="../../index.html"><img id="header-nav-logo" src="../../assets/images/d&d/logo-dragon.png"></a>
 
         <nav class="menubar">
             <ul>
                 <li><a class="link-internal" href="../../index.html">Início</a></li>
-                <li><a class="dropdown livro-dropdown">Livros</a>
-                    <div class="menu-drop">
-                        <ul id="livro-drop">
+                <li><a class="dropdown dropdown-books">Livros</a>
+                    <div class="dropdown-books-menu">
+                        <ul class="dropdown-books-list">
                             <li><a class="link-internal" href="../../assets/livros/livro-do-jogador.pdf" target="_blank">Livro do Jogador</a></li>
                             <li><a class="link-internal" href="../../assets/livros/guia-do-mestre.pdf" target="_blank">Livro do Mestre</a></li>
                             <li><a class="link-internal" href="../../assets/livros/manual-dos-monstros.pdf" target="_blank">Manual dos Monstros</a></li>
@@ -33,10 +33,10 @@
             </ul>
         </nav>
     </header>
-    
-    <nav class="menu-offset hide">
-        <img class="close" src="../../assets/images/close.png">
-        <img class="ded-img"src="../../assets/images/d&d/5e-logo.webp">
+
+    <nav class="menu-mobile-offset hide">
+        <img class="menu-mobile-offset-close" src="../../assets/images/close.png">
+        <img class="menu-mobile-offset-logo"src="../../assets/images/d&d/5e-logo.webp">
     </nav>
 
     <main>
@@ -66,7 +66,7 @@
 
         <img src="../../assets/images/perg-top.png" class="pergaminho">
         <section class="main-section attributes">
-            <section id="informacoes" class="main-box">
+            <section id="informacoes" class="section-content">
                 <p><strong>Nome:</strong> Kvocth'el Blanco.</p>
                 <p><strong>Idade:</strong> Maduro (263 á 350 anos).</p>
                 <p><strong>Raça:</strong> Elfo da Floresta.</p>
@@ -76,7 +76,7 @@
                 <p><strong>Bônus de Proeficiência:</strong> +2</p>
                 <p class="row-spacer"><strong>PV:</strong> 10 <strong>C.A:</strong> 14 <strong>PO</strong>170</p>
             </section>
-            <section id="atributos" class="main-box">
+            <section id="atributos" class="section-content">
                 <p><strong>FOR:</strong> 12 <sup>+1</sup></p>
                 <p><strong>DES:</strong> 16 <sup>+3</sup></p>
                 <p><strong>CON:</strong> 11 <sup>+0</sup></p>
@@ -84,7 +84,7 @@
                 <p><strong>SAB:</strong> 18 <sup>+4</sup></p>
                 <p><strong>CAR:</strong> 12 <sup>+1</sup></p>
             </section>
-            <section class="main-box">
+            <section class="section-content">
                 <p>
                     <strong>Idiomas.</strong>
                     Comum, Élfico, Silvestre e Druídico.
@@ -96,7 +96,7 @@
                 </p>
             </section>
 
-            <section class="main-box">
+            <section class="section-content">
                 <h2><strong>Proeficiências</strong></h2><br>
 
                 <p>
@@ -123,18 +123,12 @@
                 </p>
             </section>
 
-            <section class="main-box">
-
-
-            </section>
         </section>
         <img src="../../assets/images/perg-bottom.png" class="pergaminho">
 
-
-
         <img src="../../assets/images/perg-top.png" class="pergaminho">
         <section class="main-section talents">
-            <section class="main-box">
+            <section class="section-content">
                 <h2><strong>Talentos</strong></h2><br>
                 <p>
                     <strong>Aumento no Valor de Habilidade.</strong><br>
@@ -174,7 +168,7 @@
         <img src="../../assets/images/perg-bottom.png" class="pergaminho">
         <img src="../../assets/images/perg-top.png" class="pergaminho">
         <section class="main-section inventory">
-            <section class="main-box">
+            <section class="section-content">
                 <h2><strong>Equipamentos</strong></h2><br>
 
                 <p>(1) <abbr title="C.A 11 + Mod Des">Armadura de Couro</abbr></p>
@@ -183,7 +177,7 @@
                 <p>(20) Flechas</p>
             </section>
 
-            <section class="main-box">
+            <section class="section-content">
                 <p><strong>Pacote de Explorador</strong>:</p>
                 <p>
                     <ul>
@@ -198,7 +192,7 @@
                 </p>
             </section>
 
-            <section class="main-box">
+            <section class="section-content">
                 <p>(1) Bordão;</p>
                 <p>(1) Armadilha de caça;</p>
                 <p>(1) Fetiche Capuz de Lobo Branco.</p>
@@ -211,7 +205,7 @@
 
         <img src="../../assets/images/perg-top.png" class="pergaminho">
         <section class="main-section">
-            <section class="main-box biography">
+            <section class="section-content biography">
                 <h2>Auto Biografia</h2><br>
 
                 <p>Guerreiros da natureza, nós patrulheiros, especializamos-nos na caça de bestas que ameaçam as margens da civilização. No árduo treinamento, aprendemos a rastrear nossos inimigos favoritos como exímios predadores; e com um movimentar silêncioso na floresta, escondemos-nos atrás de arbustos e pedregulhos. Apesar de um patrulheiro sobreviver como um caçador, um guia ou um rastreador, a verdadeira vocação desta estirpe é defender as zonas periféricas da civilização das investidas de monstros e hordas de humanoides que vem das regiões selvagens.</p>
@@ -232,7 +226,7 @@
         <img src="../../assets/images/perg-top.png" class="pergaminho">
         <section class="main-section spells">
 
-            <section class="main-box">
+            <section class="section-content">
                 <h2>Habilidade de Conjuração</h2><br>
 
                 <p>Sabedoria é a sua habilidade para conjurar suas magias
@@ -248,7 +242,7 @@
                 <p><strong>Modificador de Ataque de Magia</strong> = Bônus de Proficiência +
                 seu Modificador de Sabedoria </p>
             </section>
-            <section class="main-box">
+            <section class="section-content">
                 <h2>Lista de Magias</h2>
                 <ul>
                     <li>Não disponível. ( Requer Level 2 ).</li>

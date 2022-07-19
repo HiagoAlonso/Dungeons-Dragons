@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/d&d/logo-dragon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/cronics.css">
     <link rel="stylesheet" href="../style/mobile.css">
-    <link rel="stylesheet" href="../style/lorotas.css">
     <title>Dungeons Things | Cronicas</title>
 </head>
 <body>
     <header>
-        <img class="menuicon hide"src="../assets/images/menu-dourado.png">
-        <a href="index.html"><img id="logo-dragon" src="../assets/images/d&d/logo-dragon.png"></a>
-
+        <img class="menu-mobile-ico hide"src="../assets/images/menu-dourado.png">
+        <a href="../index.html"><img id="header-nav-logo" src="../assets/images/d&d/logo-dragon.png"></a>
         <nav class="menubar">
             <ul>
                 <li><a class="link-internal" href="../index.html">Início</a></li>
-                <li><a class="dropdown livro-dropdown">Livros</a>
-                    <div class="menu-drop">
-                        <ul id="livro-drop">
+                <li><a class="dropdown dropdown-books">Livros</a>
+                    <div class="dropdown-books-menu">
+                        <ul class="dropdown-books-list">
                             <li><a class="link-internal" href="../assets/livros/livro-do-jogador.pdf" target="_blank">Livro do Jogador</a></li>
                             <li><a class="link-internal" href="../assets/livros/guia-do-mestre.pdf" target="_blank">Livro do Mestre</a></li>
                             <li><a class="link-internal" href="../assets/livros/manual-dos-monstros.pdf" target="_blank">Manual dos Monstros</a></li>
@@ -34,26 +33,28 @@
         </nav>
     </header>
     
-    <nav class="menu-offset hide">
-        <img class="close" src="../assets/images/close.png">
-        <img class="ded-img"src="../assets/images/d&d/5e-logo.webp">
+    <nav class="menu-mobile-offset hide">
+        <img class="menu-mobile-offset-close" src="../assets/images/close.png">
+        <img class="menu-mobile-offset-logo"src="../assets/images/d&d/5e-logo.webp">
     </nav>
 
     <main>
-        <section class="main-section-head">
-            <h1>Crônicas</h1>
-        </section>
-        <section class="main-section-body">
-            <a class="cronica link-internal" href="tales/lorotas-do-lobo.html">
-                <div class="logo-cronica">
-                    <img src="../assets/images/logo.png">
-                </div>
-                <div class="content-cronica">
-                    <h2>Lorotas do Lobo</h2>
-                    <p> Capítulo 1 Disponível</p>
-                </div>
-            </a>
-        </section>
+        <div class="main-container">
+            <div class="container-head">
+                <h1>Crônicas</h1>
+            </div>
+            <div class="container-body">
+                <a class="cronic link-internal" href="tales/lorotas-do-lobo.html">
+                    <div class="cronic-logo">
+                        <img src="../assets/images/logo.png">
+                    </div>
+                    <div class="cronic-content">
+                        <h2>Lorotas do Lobo</h2>
+                        <p> Capítulo 1 Disponível</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
 
     <footer>
