@@ -23,7 +23,7 @@ $("document").ready(function() {
     $(".livro-dropdown").click(function () {
         $('.menu-drop').slideToggle('slow')
     })
-    $(".menubar").mouseleave(function () {
+    $("header").mouseleave(function () {
         $('.menu-drop').slideUp('slow')
     })
 
@@ -63,8 +63,6 @@ $("document").ready(function() {
             scrollTop: servicePlace
         })
     })
-
-
     
     //     P a g i n a t i o n
 

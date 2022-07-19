@@ -91,6 +91,10 @@
         width: 100%;
         padding: 15px 0;
         text-align: center;
+    } .main-section-head h1 {
+        font-size: 12vw;
+    } .main-section-body {
+        justify-content: center;
     }
 
     .main-title h1 {

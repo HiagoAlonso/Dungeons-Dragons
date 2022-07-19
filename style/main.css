@@ -55,7 +55,8 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 } header #logo-dragon {
     height: 65px;
-    padding: 8px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: -5px;
 }
 
 .menubar ul{
@@ -243,6 +244,15 @@ main {
     flex-direction: column;
 }
 
+.main-section {
+    width: 60%;
+    margin: auto;
+    background-color: #F5E096;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
 .main-section-head {
     padding: 15px 3%;
     margin-top: 10vh;
@@ -262,18 +272,13 @@ main {
 }
 
 .main-section-body {
+    display: flex;
+    gap: 30px;
     background-color: rgba(20, 0, 0, 0.8);
     color: goldenrod;
-    padding-bottom: 20px;
-}
-
-.main-section {
-    width: 60%;
-    margin: auto;
-    background-color: #F5E096;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.466);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
+    border-bottom: 1px solid var(--dark-border-reflex);
+    box-shadow: 0 0 7px var(--dark-border);
 }
 
 .main-box {

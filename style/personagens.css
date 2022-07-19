@@ -76,10 +76,8 @@ body {
     text-indent: 5%;
 }
 
-
 .content-character {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
 
     padding: 20px;
