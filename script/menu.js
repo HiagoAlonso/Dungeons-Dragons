@@ -78,7 +78,7 @@ $("document").ready(function() {
     }
 
     $("#next-page").click(function() {
-        if (defaultPage < 3) {
+        if (defaultPage < 5) {
             $(`.${defaultPage}`).hide()
             defaultPage += 1
             $(`.${defaultPage}`).show()

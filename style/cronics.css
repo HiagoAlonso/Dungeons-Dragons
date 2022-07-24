@@ -4,34 +4,40 @@ body {
     background-image: url("../assets/images/josephine-bredehoft-KsAo8ouBn8A-unsplash-embaçada.jpg");
 }
 
+.main-container {
+    margin-top: 50px;
+}
+
 main p {
     text-indent: 3%;
     text-align: justify;
+    font-size: 1em;
+    line-height: 1.3em;
 }
 
-button.nav-page {
-    background-color: transparent;
-    border: none;
-} button.nav-page > image {
-    width: 10px;
-}
 
-.arco {
-    padding: 20px;
-}
 
 .pagination {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-} .nav-page {
-    font-family: var(--font-2);
-    font-size: 1em;
-}.nav-page:hover {
-    cursor: pointer;
-
 }
+
+.nav-page {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-page:hover {
+    cursor: pointer;
+}
+
+.nav-page img {
+    width: 12px;
+}
+
+
 
 .section-title {
     padding: 10px;
@@ -45,30 +51,36 @@ button.nav-page {
 .section-title h2 {
     font-size: 1em;
     font-family: var(--font-2);
-    text-indent: 2%;;
+    text-indent: 3%;;
 }
 
+
+
+.container-body {
+    width: 100%;
+}
 
 .cronic {
     display: flex;
     align-items: center;
     padding: 20px;
     margin: 20px 0;
-
+    width: 100%;
     gap: 10px;
     cursor: pointer;
-}
-
-.cronic-logo img {
-    height: 60px;
-}
-
-.cronic-content {
-    padding: 20px;
+    background-image: linear-gradient(to right, rgba(92, 0, 0, 0.15), transparent);
     box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--dark-border);
     border-radius: 30px;
-    background-image: linear-gradient(to right, rgba(92, 0, 0, 0.15), transparent);
+}
+
+.cronic-logo img {
+    height: 70px;
+}
+
+.cronic-content {
+    width: 100;
+    padding: 20px;
     font-family: var(--font-3);
 }
 
