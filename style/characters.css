@@ -144,10 +144,9 @@ body {
 /* --------- <-!-> Página de Personagens <-!-> ---------*/
 
 .character-card {
-    background-image: linear-gradient(to bottom, var(--dark-border-reflex), var(--dark-bg));
     min-height: 0; min-width: 0;
     width: 180px; height: 340px;
-    padding: 0; margin-left: 5%;
+    padding: 0; margin-left: 0;
     font-family: var(--font-2);
 } 
 
@@ -172,7 +171,13 @@ body {
     height: 25px;
 }
 
-.character-card-row p {
+.character-card-row p, .character-bodybox p {
     border-right: 1px solid var(--dark-border-reflex);
     padding-right: 10px;
+    color: rgb(189, 143, 27);
+}
+
+.character-card-row span, .character-bodybox span {
+    text-align: center;
+    color: rgb(189, 143, 27);
 }
