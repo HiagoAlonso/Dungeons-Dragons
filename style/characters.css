@@ -69,6 +69,12 @@ body {
 .talents > .section-content p {
     margin-top: 3%;
     text-align: justify;
+} .talents ul {
+    list-style: none;
+    text-indent: 3%;
+    text-align: justify;
+} .talents span {
+    font-weight: bold;
 }
 
 .inventory ul, .spells ul {

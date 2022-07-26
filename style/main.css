@@ -167,7 +167,7 @@ header {
     text-shadow: none;
 }
 
-.section-content p, .section-content h2 {
+.section-content p, .section-content li, .section-content h2 {
     padding-left: 20px;
     padding-right: 20px;
 }
