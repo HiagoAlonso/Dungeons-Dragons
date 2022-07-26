@@ -13,7 +13,7 @@ $("document").ready(function() {
         $(".menubar").animate({left: '0'});
     })
 
-    $("menu-mobile-offset-close").click(function () {
+    $(".menu-mobile-offset-close").click(function () {
         $(".menu-mobile-offset").animate({left: '-65vw'});
         $(".menubar").animate({left: '-65vw'});
     })
