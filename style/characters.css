@@ -79,7 +79,7 @@ body {
 
 .inventory ul, .spells ul {
     list-style: none;
-    text-indent: 5%;
+    text-indent: 3%;
 }
 
 .row-spacer {
@@ -158,7 +158,7 @@ body {
 
 .character-card-image img {
     padding-top: 1px;
-    width: 180px;
+    width: 170px;
     height: 240px;
 } 
 
