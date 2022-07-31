@@ -146,17 +146,17 @@
 
     .dropdown-books-menu {
         width: 65vw;
-        padding: 0;
-        margin-left: -22px;
-        margin-top: 20px;
+        padding: 0 12px;
         box-shadow: 0 0 0;
+        margin: auto;
+        border-top: 0px;
     }
     
     .dropdown-books-list {
         gap: 0;
         font-size: 0.8em;
     }
-    
+
     .dropdown-books-list a {
         color: goldenrod;
         text-shadow: 0 0 1px var(--papiro-transparent);
@@ -183,6 +183,10 @@
         border: 1px solid var(--dark-border-reflex);
         width: 65vw;
         padding-left: 20px;
+    }
+
+    .dropdown-books-menu li {
+        width: 60vw;
     }
 
     .menubar ul::before, .menubar li::after {

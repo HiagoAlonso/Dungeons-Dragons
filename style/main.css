@@ -63,7 +63,7 @@ header {
     margin-bottom: -5px;
 }
 
-.menubar ul{
+.menubar > ul{
     list-style: none;
     display: flex;
     color: goldenrod;
@@ -76,7 +76,7 @@ header {
     color: gold;
 }
 
-.menubar ul::before {
+.menubar > ul::before {
     content: "";
     background-image: linear-gradient(to right, var(--dark-border), var(--dark-border-reflex));
     width: 3px;
@@ -104,7 +104,7 @@ header {
     display: none;
     border-top: 1px solid var(--dark-border-reflex);
     box-shadow: 0 0 7px var(--dark-border);
-    background-image: linear-gradient(to top, var(--dark-bg), var(--dark-border));
+    background-color: var(--dark-border);
     padding: 20px;
 }
 
@@ -112,6 +112,10 @@ header {
     display: flex;
     list-style: none;
     gap: 20px;
+} 
+
+.dropdown-books-list a {
+    font-size: 1em;
 }
 
 
