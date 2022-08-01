@@ -78,6 +78,16 @@
 
 @media (max-width: 800px) {
 
+    .character-card-image img {
+        padding-top: 1px;
+        width: 250px;
+        height: 340px;
+    } 
+
+    .character-card {
+        width: 250px; height: 340px;
+    }
+
     .container-head {
         width: 100%;
         padding: 15px 0;
