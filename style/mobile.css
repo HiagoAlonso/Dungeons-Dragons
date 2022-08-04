@@ -14,6 +14,8 @@
         gap: 0;
     } .dropdown-books-list li {
         border-bottom: 0.1px solid var(--dark-border-reflex);
+    } .button-mobile-top {
+        display: none;
     }
 }
 
@@ -138,6 +140,12 @@
 
     #row-spacer {
         display: inline-block;
+    }
+
+    .button-mobile-top {
+        position: fixed;
+        top: 3%;
+        left: 87%;
     }
 
 

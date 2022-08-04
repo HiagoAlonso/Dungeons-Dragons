@@ -27,6 +27,14 @@ $("document").ready(function() {
         $('.dropdown-books-menu').slideUp('slow')
     })
 
+    //     B u t t o n   T o - T o p
+
+    $(".button-mobile-top").click(function(){
+        $("html, body").animate({
+            scrollTop: 0
+        })
+    })
+    
     //     M e n u  S c r o l l
 
     $(".scroll-attributes").click(function(){
