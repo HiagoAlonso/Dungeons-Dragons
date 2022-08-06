@@ -57,8 +57,8 @@ header {
     border-bottom: 1px solid var(--dark-border);
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 } header #header-nav-logo {
-    height: 65px;
-    padding: 5px 10px 5px 10px;
+    height: 55px;
+    padding: 7px 10px 7px 10px;
     margin-bottom: -5px;
 }
 
@@ -79,7 +79,7 @@ header {
     content: "";
     background-image: linear-gradient(to right, var(--dark-border), var(--dark-border-reflex));
     width: 3px;
-    height: 65px;
+    height: 55px;
     position: absolute;
     top: 0;
 }
@@ -88,7 +88,7 @@ header {
     content: "";
     background-image: linear-gradient(to right, var(--dark-border), var(--dark-border-reflex));
     width: 3px;
-    height: 65px;
+    height: 55px;
     position: absolute;
     top: 0;
     transform: translateX(9px);
@@ -111,10 +111,14 @@ header {
     display: flex;
     list-style: none;
     gap: 20px;
-} 
+}
+
+.dropdown-books-list li {
+    padding: 5px 10px;
+}
 
 .dropdown-books-list a {
-    font-size: 1em;
+    font-size: 0.6em;
 }
 
 
@@ -309,6 +313,24 @@ header {
     justify-content: center;
     width: 76%;
     margin: auto;
+}
+
+.fill {
+    background: linear-gradient(to bottom, red, gold, white);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+} .fill:hover {
+    background: linear-gradient(to bottom, gold, white);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 .flip {
