@@ -14,6 +14,7 @@
         border-bottom: 0.1px solid var(--dark-border-reflex);
     } .button-mobile-top {
         display: none;
+        position: absolute;
     }
 }
 
@@ -142,9 +143,15 @@
 
     .button-mobile-top {
         position: fixed;
-        top: 2%;
-        left: 87%;
+        top: 87%;
+        left: 85%;
         z-index: 1000;
+        color: gold;
+        background-color: var(--dark-border);
+        padding: 10px;
+        font-size: 1.5em;
+        border-radius: 300px;
+        border: 1px solid var(--dark-border-reflex)
     }
 
 
